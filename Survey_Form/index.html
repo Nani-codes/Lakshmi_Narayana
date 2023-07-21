@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Building a survey form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title"> Survey Form</h1>
+    <p id="description">A sample survey form for a mini project</p>
+    <form id="survey-form">
+      <div>
+        <label id= "name-label" >Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required><br>
+      <label id= "email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your mail" required><br>
+      <label id= "number-label">Age</label>
+      <input id="number" type="number" placeholder="Enter your age" min="18" max="99"required><br>
+      <label id= "dropdown-label">Dropdown</label>
+      <select id="dropdown">
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select><br>
+      <label id= "number-label">Radio Buttons</label>
+      <radio><input name="radio" type="radio"value="option1">Option 1<input name="radio"value="option2"  type="radio">Option 2<br></radio><br>
+      <label id= "Check-Box">Check Box</label>
+      <check><input  type="checkbox"value="check1"> Check 1
+      <input type="checkbox"value="check2">Check 2<br></check><br>
+      
+
+      <label id= "comments">Aditional Comments</label>
+      <textarea placeholder="Additional Comments"></textarea>
+      <button id="submit" >submit</button>
+      </div>
+      
+    </form>
+  </body>
+</html>
