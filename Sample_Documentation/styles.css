@@ -1,0 +1,99 @@
+header {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cinzel, serif;
+}
+
+body {
+    font-family: Fauna One;
+}
+
+#navbar {
+    position: fixed;
+    /* min-width: 290px; */
+    /* top: 0px; */
+    /* left: 0px; */
+    width: 250px;
+    height: 100%;
+    border-right: 2px solid black;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 250px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    /* font-size: 1.8em; */
+    /* font-weight: thin; */
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar a {
+    display: block;
+    padding: 30px 30px;
+    color: grey;
+    text-decoration: none;
+    /* cursor: pointer; */
+}
+
+#navbar a:hover {
+    color: black;
+    font-size: 1.3rem;
+}
+
+section li {
+    margin: 20px;
+}
+
+.main-section {
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width:700px) {
+
+    /* For mobile phones: */
+    #navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        max-height: 250px;
+        border: none;
+        border-bottom: 2px solid;
+    }
+
+    header {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Cinzel, serif;
+    }
+
+    body {
+        font-size: 0.8rem;
+        font-family: Fauna One;
+    }
+
+    #navbar a {
+        display: block;
+        padding: 10px;
+        color: grey;
+        text-align: center;
+        text-decoration: none;
+        /* cursor: pointer; */
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 250px;
+    }
+}
