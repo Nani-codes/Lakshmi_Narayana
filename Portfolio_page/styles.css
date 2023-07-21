@@ -1,0 +1,180 @@
+body {
+    margin: 0px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#navbar {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+}
+
+#link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar a {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    /* background-color:white; */
+    border-radius: 5px;
+    padding: 0.6% 5%;
+    margin: 0.7% 3%;
+    color: white;
+    text-decoration: none;
+
+}
+
+#navbar a:hover {
+    background-color: #7d5b5b;
+}
+
+#welcome-section {
+    display: flex;
+    /* flex-direction:column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #7d5b5b;
+    width: 100%;
+    height: 100vh;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    /* content:fill; */
+    justify-content: center;
+    /* align-items:center; */
+    /* width:50%;
+    height:50%; */
+    /* border:2px solid black; */
+}
+
+#welcome-section h1 {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 7vw;
+}
+
+#welcome-section h3 {
+    margin: 0px;
+    color: white;
+    letter-spacing: 3vw;
+}
+
+#welcome-section h2 {
+    margin: 0px;
+    color: black;
+    padding: 0px;
+    font-size: 7vw;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b08080;
+    width: 100%;
+    height: 100%;
+}
+
+.project-tile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1% 5%;
+}
+
+#projects a:hover {
+    color: black;
+    background-color: white;
+}
+
+#contact {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e8a9a9;
+}
+
+#contact a {
+    padding: 10%;
+    font-size: 5vw;
+    color: black;
+}
+
+#contact a:hover {
+    padding: 10%;
+    font-size: 5vw;
+    color: white;
+}
+
+#footer {
+    margin: 0px;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 5%;
+    background-color: black;
+}
+
+@media (max-width:400px) {
+    #link {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        /* flex-direction:row; */
+        justify-content: center;
+    }
+
+    #contact a {
+        padding: 10%;
+        font-size: 5vw;
+        color: white;
+    }
+
+    #contact a:hover {
+        padding: 10%;
+        font-size: 5vw;
+        color: black;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #e8a9a9;
+    }
+
+    #projects img {
+        width: 100%;
+    }
+
+    #projects {
+        font-size: 3vw;
+    }
+}
