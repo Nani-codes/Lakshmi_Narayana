@@ -1,4 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body {
+    top:0px;
+    bottom: 0px;
     margin: 0px;
     font-family: 'Source Code Pro', monospace;
 }
@@ -28,6 +33,13 @@ body {
     color: white;
     text-decoration: none;
 
+}
+
+img {
+    max-width: 300px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 #navbar a:hover {
@@ -81,14 +93,16 @@ body {
     align-items: center;
     background-color: #b08080;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .project-tile {
+    /* border: 2px solid black; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 #projects a {
@@ -105,31 +119,50 @@ body {
 }
 
 #contact {
-    margin: 0px;
-    padding: 0px;
+    margin-bottom: 0px;
+    /* padding: 0px; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #e8a9a9;
 }
+#social{
+    display: flex;
 
-#contact a {
-    padding: 10%;
-    font-size: 5vw;
+}
+.certi{
+    margin-top: 50px;;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.certi a {
+    padding: 5%;
+    font-size: 2vw;
     color: black;
 }
-
-#contact a:hover {
-    padding: 10%;
-    font-size: 5vw;
+.certi a:hover {
+    /* padding: 10%; */
+    font-size: 2.25vw;
     color: white;
 }
-
+#social a{
+    margin: 30px;
+    font-size: 2vw;
+}
+#social a:hover {
+    /* padding: 10%; */
+    /* font-size: 2.5vw; */
+    color: white;
+}
 #footer {
     margin: 0px;
-    font-size: 1.5vw;
+    font-size: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,7 +172,10 @@ body {
     background-color: black;
 }
 
-@media (max-width:400px) {
+@media (max-width:1000px) {
+    #navbar{
+        position: relative;
+    }
     #link {
         display: flex;
         flex-direction: column;
@@ -148,25 +184,25 @@ body {
         justify-content: center;
     }
 
-    #contact a {
+    .certi a {
         padding: 10%;
-        font-size: 5vw;
+        font-size: 2.5vw;
         color: white;
     }
 
-    #contact a:hover {
+    .certi a:hover {
         padding: 10%;
-        font-size: 5vw;
+        font-size: 3vw;
         color: black;
     }
 
     #contact {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #e8a9a9;
     }
 
@@ -175,6 +211,14 @@ body {
     }
 
     #projects {
-        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b08080;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        flex-wrap: wrap;
+        font-size: 2vw;
     }
 }
